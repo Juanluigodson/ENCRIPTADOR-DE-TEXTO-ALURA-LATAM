@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Tú Encriptador de Texto favorito!</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div>
+            <img class="logo" src="./assets/Logo.png" alt="logo alura">
+        </div>
+        
+    </header>
+    <main class="contenido">
+        <section class="contenido__entrada">
+            <textarea class="text-area"  placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion">Escriba solo en minúsculas y sin usar tildes, muchas gracias</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="resultado">
+            <textarea class="mensaje"></textarea>
+            <div class="textos">
+                <p class="text2">Ningun mensaje encontrado</p>
+                <p class="text">Aquí se mostrara tu texto Encriptado</p>
+                <button class="btn-copiar" onclick="copiar()" hidden>Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">Desarrollado por Juan Luis Mella Concha</footer>
+    <script src="app.js"></script>
+</body>
+</html>
